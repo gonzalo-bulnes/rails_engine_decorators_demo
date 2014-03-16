@@ -38,3 +38,16 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+# SimpleTokenAuthentication
+# See https://github.com/gonzalo-bulnes/simple_token_authentication/blob/\
+#     fix-authentication-token-not-renewed-after-password-change/features/\
+#     step_definitions/dummy_app_steps.rb#L19-L30
+gem 'simple_token_authentication', '1.2.0'
+
+group :development, :test do
+  gem 'rspec-rails', require: false
+  gem 'factory_girl_rails', require: false
+end
+
