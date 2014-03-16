@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+  - 1.9.3
+  - 2.0.0
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database simple_shopping_list_test' -U postgres
+  - bundle exec rake db:schema:load
+  - bundle exec rake db:seed
+script: bundle exec rspec spec
+
