@@ -7,4 +7,7 @@ This application is a standalone version of the dummy app which is used to test 
 
   [sta]: https://github.com/gonzalo-bulnes/simple_token_authentication
 
+## Test Suite
+
+Run the test suite with: `cd rails_engine_decorators_demo && rspec spec`
 
