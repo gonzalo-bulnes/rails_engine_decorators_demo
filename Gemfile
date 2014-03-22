@@ -46,6 +46,8 @@ end
 #     step_definitions/dummy_app_steps.rb#L19-L30
 gem 'simple_token_authentication', '1.2.0'
 
+gem 'rails_engine_decorators'
+
 group :development, :test do
   gem 'rspec-rails', require: false
   gem 'factory_girl_rails', require: false
